@@ -17,7 +17,7 @@ class smtp
     private $sock; 
  
     /* Constractor */ 
-    function smtp($relay_host = "", $smtp_port = 25,$auth = false,$user,$pass) 
+    function smtp($relay_host = "smtp.qq.com", $smtp_port = 465,$auth = false,$user = 672077870,$pass = @kou19891116) 
     { 
         $this->debug = FALSE; 
         $this->smtp_port = $smtp_port; 
