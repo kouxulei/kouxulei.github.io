@@ -18,13 +18,13 @@ $phone = $_POST['phone'];
 $message = $_POST['message'];
 
 //######################################################### 
-$smtpserver = "smtp.yeah.net";                           //  SMTP
-$smtpserverport = 25;                                    //  SMTP
-$smtpusermail = "kou_xulei@yeah.net";                    //  SMTP 
-$smtpemailto = "kou_xulei@yeah.net";                     //
-$smtpuser = "kou_xulei@yeah.net";                        //  SMTP
-$smtppass = "@kou19891116";                              //  SMTP
-$mailsubject = "Website Contact Form:  $name";           // 
+$smtpserver = "smtp.qq.com";                           //  SMTP
+$smtpserverport = 465;                                 //  SMTP
+$smtpusermail = "672077870@qq.com";                    //  SMTP 
+$smtpemailto = "672077870@qq.com";                     //
+$smtpuser = "672077870@qq.com";                        //  SMTP
+$smtppass = "@kou19891116";                            //  SMTP
+$mailsubject = "Website Contact Form:  $name";         // 
 $mailbody = "You have received a new message from your website contact form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email_address\n\nPhone: $phone\n\nMessage:\n$message";      // 
 $mailtype = "HTML";                                      //(HTML/TXT)
 //########################################################### 
