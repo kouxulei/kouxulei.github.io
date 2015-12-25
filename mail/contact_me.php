@@ -29,7 +29,7 @@ $mailbody = "You have received a new message from your website contact form.\n\n
 $mailtype = "txt";                                      //(HTML/TXT)
 //########################################################### 
 $smtp = new smtp($smtpserver,$smtpserverport,true,$smtpuser,$smtppass); //
-$smtp->debug = false;                                                   //
+//$smtp->debug = false;                                                   //
 $smtp->sendmail($smtpemailto, $smtpusermail, $mailsubject, $mailbody, $mailtype); 
 return true;
 ?> 
