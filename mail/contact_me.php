@@ -3,7 +3,9 @@ require_once ('email.class.php');
 if(empty($_POST['name'])||empty($_POST['email'])||
 empty($_POST['phone'])||
 empty($_POST['message'])||
-!filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))
+!filter_var($_POST
+
+['email'],FILTER_VALIDATE_EMAIL))
 
 {
 echo "No arguments Provided!";
@@ -18,7 +20,6 @@ $phone = $_POST['phone'];
 $message = $_POST['message'];
 
 
-
 //############################################################ 
 $smtpserver = "smtp.qq.com";                                //  SMTP
 $smtpserverport = 25;                                       //  SMTP
@@ -27,9 +28,9 @@ $smtpemailto = "672077870@qq.com";                          //
 $smtpuser = "672077870@qq.com";                             //  SMTP
 $smtppass = "@kou19891116";                                 //  SMTP
 $mailsubject = "Website Contact Form:  $name";              // 
-$mailbody = "ÄúÊÕµ½Ò»·âĞÂÓÊ¼ş´ÓÄúµÄÍøÕ¾µÄÁªÏµ·½Ê½.
+$mailbody = "æ‚¨æ”¶åˆ°ä¸€å°æ–°é‚®ä»¶ä»æ‚¨çš„ç½‘ç«™çš„è”ç³»æ–¹å¼.
 \n
-\n"."ÏÂÃæÊÇÏêÏ¸ĞÅÏ¢:
+\n"."ä¸‹é¢æ˜¯è¯¦ç»†ä¿¡æ¯:
 \n
 \nName: $name
 \n
@@ -41,9 +42,6 @@ $mailbody = "ÄúÊÕµ½Ò»·âĞÂÓÊ¼ş´ÓÄúµÄÍøÕ¾µÄÁªÏµ·½Ê½.
 \n$message";
 $mailtype = "TXT";                                         //(HTML/TXT)
 //############################################################
-
-$headers = "From: noreply@yourdomain.com\n";
-$headers .= "Reply-To: $email_address";
 
 $smtp = new smtp($smtpserver,$smtpserverport,true,$smtpuser,$smtppass); //
 //$smtp->debug = false;                                                   //
